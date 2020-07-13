@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ứng dụng máy tính</title>
+</head>
+<body>
+    <form>
+        <span>số 1:</span><input type="text" size="10" id="so1">
+        <span>Số 2:</span><input type="text" size="10" id="so2"><br>
+        <input type="button" value="Addition(+)" onclick="showMessage()">
+        <input type="button" value="Sub(-)" onclick="subtraction()">
+        <input type="button" value="mul(*)" onclick="multiplation()">
+        <input type="button" value="div(/)" onclick="divison()">
+        <div id="ketqua">xin chao</div>
+    </form>
+    <script>
+
+        function showMessage() {
+            let so1 = document.getElementById("so1").value;
+            so1 = parseInt(so1);
+            let so2 = document.getElementById("so2").value;
+            so2 = parseInt(so2);
+            let sum = so1 + so2;
+            document.getElementById("ketqua").innerHTML = "Tổng hai số là :" + sum;
+        }
+        function  subtraction() {
+            let so1 = document.getElementById("so1").value;
+            so1 = parseInt(so1);
+            let so2 = document.getElementById("so2").value;
+            so2 = parseInt(so2);
+            let sub = so1 - so2;
+            document.getElementById("ketqua").innerHTML = "Hiệu hai số là :" + sub;
+        }
+        function  multiplation() {
+            let so1 = document.getElementById("so1").value;
+            so1 = parseInt(so1);
+            let so2 = document.getElementById("so2").value;
+            so2 = parseInt(so2);
+            let mul = so1 * so2;
+            document.getElementById("ketqua").innerHTML = "Thương hai số là :" + mul;
+        }
+        function  divison() {
+            let so1 = document.getElementById("so1").value;
+            so1 = parseInt(so1);
+            let so2 = document.getElementById("so2").value;
+            so2 = parseInt(so2);
+            let div = so1 / so2;
+            document.getElementById("ketqua").innerHTML = "tích hai số là :" + div;
+        }
+    </script>
+</body>
+</html>
